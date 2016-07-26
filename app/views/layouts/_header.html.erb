@@ -8,11 +8,25 @@
   </header>
 
 <!-- Nav -->
-  <nav id="nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li class="current"><a href="left-sidebar.html">親の会とは</a></li>
-      <li><a href="right-sidebar.html">活動報告</a></li>
-      <li><a href="no-sidebar.html">会員・賛助会員</a></li>
-    </ul>
+  <nav class="navvar navbar-default" id="nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">手をつなぐ親の会</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_target">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+      </div>
+      <div class="collapse navbar-collapse" id="nav_target">
+        
+        <ul class="nav navbar-nav">
+          <li class= "<%= 'active' if controller.controller_name == 'home' %>"><%= link_to "Home", root_path %></li>
+          <li class= "<%= 'active' if controller.controller_name == 'about' %>"><%= link_to "親の会とは", about_path %></li>
+          <li class= "<%= 'active' if controller.controller_name == 'activities' %>"><%= link_to "活動報告", activities_path %></li>
+          <li class= "<%= 'active' if controller.controller_name == 'recruitmentMember' %>"><%= link_to "会員・賛助会員", recruitmentMember_path %></li>
+        </ul>
+      </div>
+    </div>
   </nav>

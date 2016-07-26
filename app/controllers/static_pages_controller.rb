@@ -29,6 +29,6 @@ class StaticPagesController < ApplicationController
   def recruitmentMember
   end
 
-  def recruitmentSappoter
+  def recruitmentSuppoter
   end
 end
