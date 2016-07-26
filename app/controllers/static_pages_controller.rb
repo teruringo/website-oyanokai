@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def news-and-report
+  def newsAndReport
   end
 
   def greetings
@@ -26,9 +26,9 @@ class StaticPagesController < ApplicationController
   def activities
   end
 
-  def recruitment-member
+  def recruitmentMember
   end
 
-  def recruitment-sappoter
+  def recruitmentSappoter
   end
 end

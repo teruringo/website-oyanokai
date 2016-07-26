@@ -11,8 +11,8 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get news-and-report" do
-    get static_pages_news-and-report_url
+  test "should get newsAndReport" do
+    get static_pages_newsAndReport_url
     assert_response :success
   end
 
@@ -46,13 +46,13 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get recruitment-member" do
-    get static_pages_recruitment-member_url
+  test "should get recruitmentMember" do
+    get static_pages_recruitmentMember_url
     assert_response :success
   end
 
-  test "should get recruitment-sappoter" do
-    get static_pages_recruitment-sappoter_url
+  test "should get recruitmentSappoter" do
+    get static_pages_recruitmentSappoter_url
     assert_response :success
   end
 
