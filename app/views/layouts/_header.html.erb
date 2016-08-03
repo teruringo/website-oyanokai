@@ -1,15 +1,7 @@
-<!-- Header -->
-  <header id="header">
-    <div class="logo container">
-      <div>
-        <h1><%= link_to "新宿区手をつなぐ親の会", root_path, id: "logo" %></h1>
-      </div>
-    </div>
-  </header>
 
 <!-- Nav -->
-  <nav class="navvar navbar-default" id="nav">
-    <div class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+    <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">手をつなぐ親の会</a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_target">
@@ -22,10 +14,10 @@
       <div class="collapse navbar-collapse" id="nav_target">
         
         <ul class="nav navbar-nav">
-          <li class= "<%= 'active' if controller.controller_name == 'home' %>"><%= link_to "Home", root_path %></li>
-          <li class= "<%= 'active' if controller.controller_name == 'about' %>"><%= link_to "親の会とは", about_path %></li>
-          <li class= "<%= 'active' if controller.controller_name == 'activities' %>"><%= link_to "活動報告", activities_path %></li>
-          <li class= "<%= 'active' if controller.controller_name == 'recruitmentMember' %>"><%= link_to "会員・賛助会員", recruitmentMember_path %></li>
+          <li class="<%= 'active' if controller.action_name == 'home' %>"><%= link_to "Home", root_path %></li>
+          <li class="<%= 'active' if controller.action_name == 'about' %>"><%= link_to "親の会とは", about_path %></li>
+          <li class="<%= 'active' if controller.action_name == 'activities' %>"><%= link_to "活動報告", activities_path %></li>
+          <li class="<%= 'active' if controller.action_name == 'recruitmentMember' %>"><%= link_to "会員・賛助会員", recruitmentMember_path %></li>
         </ul>
       </div>
     </div>
