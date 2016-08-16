@@ -7,16 +7,24 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+$maincolor : #4acaa8;
 /* Basic */
 
 
 /* header */
 .navbar{
   margin-bottom: 0;
-  opacity: 0.85;
+  // opacity: 0.85;
+  background-color: #fff;
 }
-
+.navbar-default .navbar-nav{
+  &>.active{
+    &>a, &>a:hover, &>a:focus{
+      background-color: #4acaa8;
+      color: #fff;
+    }
+  }
+}
 
 /* body*/
 .jumbotron{
@@ -29,4 +37,33 @@
 header .container{
   margin-top: 13%;
 }
+.katudouhoukoku, .osirase{
+  h2{
+    color: $maincolor;
+  }
+  // div{
+  //   border: 20px solid orange;
+  //   padding: 0px 30px;
+  // }
+}
+
+.body-sitenav div{
+  text-align: center;
+  padding: 30px 0;
+}
 /* footer */
+footer{
+  height: auto;
+  min-height: 100px;
+  background: #111111;
+  padding: 80px 0px 80px 0px;
+  color: #ffffff;
+}
+
+/* debug */
+.debug_dump{
+  border: none;
+  border-top: 1px solid #333;
+  border-radius: 0;
+  background-color: #fff;
+}
